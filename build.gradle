@@ -17,6 +17,10 @@ dependencies {
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 
+bootBuildImage {
+	imageName = "spotifymscontainerregistry.azurecr.io/spotify-user"
+}
+
 test {
 	useJUnitPlatform()
 }
